@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+
+}
+
+.container {
+    border: 2px solid;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding-bottom: 50px;
+    box-shadow: 8px 8px 20px black;
+
+}
+
+button {
+    padding: 40px;
+    font-size: 40px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.icon {
+    text-align: center;
+    font-size: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.container>.button1:hover~.icon {
+    transition: all 10s;
+    transform: rotatez(360deg);
+}
+
+.container>.button2:hover~.icon {
+    transition: all 7s;
+    transform: rotate(800deg);
+}
+
+.container>.button3:hover~.icon {
+    transition: all 3s;
+    transform: rotateZ(3600deg);
+}
+
+.container>.button4:hover~.icon {
+    transition: all 1s;
+    transform: rotate(20000deg);
+
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        padding: 20px;
+        font-size: 34px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+
+    .icon {
+
+        font-size: 240px;
+
+    }
+}
